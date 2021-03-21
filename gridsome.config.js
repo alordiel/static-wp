@@ -12,7 +12,7 @@ module.exports = {
     {
       use: '@gridsome/source-wordpress',
       options: {
-        baseUrl: 'https://arsofia.com', // required
+        baseUrl: 'https://initlab.org', // required
         typeName: 'WordPress', // GraphQL schema name (Optional)
         apiBase: 'wp-json',
         perPage: 50,
