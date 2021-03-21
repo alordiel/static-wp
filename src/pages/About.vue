@@ -4,7 +4,7 @@
     	<article class="group post-7 page type-page status-publish hentry">
 									
 			<div class="entry themeform">
-				<h3>Какво е init&nbsp;Lab?</h3>
+				<h3>Какво е init Lab?</h3>
 				<ul>
 					<li><strong>среда</strong> с много различни и интересни индивиди;</li>
 					<li><strong>сцена</strong>, на която всеки може да бъде както учител, така и ученик;</li>
@@ -27,9 +27,9 @@
 </template>
 
 <script>
-export default {
-  metaInfo: {
-    title: 'About InitLab'
-  }
-}
+	export default {
+	  metaInfo: {
+	    title: 'About InitLab'
+	  }
+	}
 </script>

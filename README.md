@@ -1,39 +1,18 @@
 # WordPress starter for Gridsome
+Turns initlab.org into static site. It fetches only the posts (has option to get tags and categories). Uses [Vue.js](https://vuejs.org) for templates building and [GraphQL](https://graphql.org/) for sort of static database.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gridsome/gridsome-starter-wordpress)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/alordiel/static-wp)
 
 ## Install
 
-`gridsome create my-gridsome-project wordpress`
+`npm install`
+`npm run develop`
 
-## Guide
+## Technologies
 
-Add your WordPress URL to the plugin options.
+Built on top of [Gridsome](https://gridsome.org) with [@gridsome-source-wordpress](https://gridsome.org/plugins/@gridsome/source-wordpress) plugin, both using [vue.js](https://vuejs.org).
 
-```js
-// gridsome.config.js
-
-module.exports = {
-  plugins: [
-    {
-      use: '@gridsome/source-wordpress',
-      options: {
-        baseUrl: 'YOUR_WEBSITE_URL', // required
-        typeName: 'WordPress', // GraphQL schema name
-      }
-    }
-  ],
-  // Setup template routes for any WordPress collection
-  templates: {
-    WordPressPost: '/:year/:month/:day/:slug',
-    WordPressTag: '/tag/:slug'
-  },
-}
-
-```
-
-See all [options](https://gridsome.org/plugins/@gridsome/source-wordpress).
 
 ## Included templates
 
-This starter includes basic templates for categories, tags and posts.
+This starter includes basic templates for categories, tags and posts

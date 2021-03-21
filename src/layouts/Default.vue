@@ -2,11 +2,11 @@
   <div class="layout">
     <header class="header">
       <strong>
-        <g-link to="/">Gridsome</g-link>
+        <g-link to="/">InitLab</g-link>
       </strong>
       <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about/">About</g-link>
+        <g-link class="nav__link" to="/">Новини</g-link>
+        <g-link class="nav__link" to="/about/">За ИнитЛаб</g-link>
       </nav>
     </header>
     <slot/>

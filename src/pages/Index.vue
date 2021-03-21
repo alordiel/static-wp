@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <h1>Welcome to my blog :)</h1>
+    <h1>Последни новини от InitLab</h1>
     <ul class="post-list">
       <li v-for="{ node } in $page.allWordPressPost.edges" :key="node.id">
         <Post :post="node" />
@@ -30,16 +30,16 @@ query Home ($page: Int) {
 </page-query>
 
 <script>
-import { Pager } from 'gridsome'
-import Post from '~/components/Post.vue'
+  import { Pager } from 'gridsome'
+  import Post from '~/components/Post.vue'
 
-export default {
-  components: {
-    Pager,
-    Post
-  },
-  metaInfo: {
-    title: 'Welcome to my blog :)'
+  export default {
+    components: {
+      Pager,
+      Post
+    },
+    metaInfo: {
+      title: 'Последни новини от InitLab'
+    }
   }
-}
 </script>
